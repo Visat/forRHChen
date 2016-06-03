@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "fun.h"
 
 //void function(int *ttm, int *ttg)

@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "fun.h"
 
 //int ttm = 2;

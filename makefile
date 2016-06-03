@@ -1,9 +1,13 @@
-all: main.o fun.o
-	gcc -o main main.o fun.o
-main.o: main.c
-	gcc -c main.c
-fun.o: fun.c
-	gcc -c fun.c
-.PHONY: clean
-clean:
-	del *.o
+fun.o	:	fun.h	fun.c
+	gcc fun.c -c
+
+main.o	:	main.c
+	gcc main.c -c
+
+output	:	fun.o	main.o
+	gcc fun.o main.o -o output
+
+
+clean	:	
+	rm -rf	main.o	fun.o
+
